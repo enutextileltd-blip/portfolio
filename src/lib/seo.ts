@@ -11,8 +11,8 @@ export const siteConfig = {
     "Official manufacturer & supplier of 100% Export Quality 120/2 Computerized Embroidery Threads in Bangladesh. Offering 800+ Pantone ready color shades, micro-silicon zero breakage lubrication, Delta E < 0.3 lab-dip matching, and 24h sample dispatch for export garment factories and apparel brands.",
   descriptionBn:
     "কম্পিউটারাইজড মাল্টি-হেড মেশিনের জন্য ১০০% এক্সপোর্ট কোয়ালিটি ১২০/২ এমব্রয়ডারি সুতা প্রস্তুতকারক। ৮০০+ রেডি শেড, মাইক্রো সিলিকন লুব্রিকেশন (জিরো ব্রেক), এবং সারাদেশে ফ্রি স্যাম্পল ডেলিভারি।",
-  url: "https://almasaccessories.com",
-  ogImage: "https://almasaccessories.com/images/products/almas_thread_120_2.jpg",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://almasaccessories.netlify.app",
+  ogImage: "https://almasaccessories.netlify.app/images/products/almas_thread_120_2.jpg",
   keywords: [
     // Primary Brand & Product
     "Almas Thread",

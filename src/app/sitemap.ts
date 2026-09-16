@@ -1,8 +1,9 @@
 import { MetadataRoute } from "next";
 import productsData from "@/data/products.json";
+import { siteConfig } from "@/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://almasaccessories.com";
+  const baseUrl = siteConfig.url;
   const lastModified = new Date();
 
   // 1. Static Core Pages
