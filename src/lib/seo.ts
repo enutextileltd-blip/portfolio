@@ -12,7 +12,7 @@ export const siteConfig = {
   descriptionBn:
     "কম্পিউটারাইজড মাল্টি-হেড মেশিনের জন্য ১০০% এক্সপোর্ট কোয়ালিটি ১২০/২ এমব্রয়ডারি সুতা প্রস্তুতকারক। ৮০০+ রেডি শেড, মাইক্রো সিলিকন লুব্রিকেশন (জিরো ব্রেক), এবং সারাদেশে ফ্রি স্যাম্পল ডেলিভারি।",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://almasaccessories.netlify.app",
-  ogImage: "https://almasaccessories.netlify.app/images/products/almas_thread_120_2.jpg",
+  ogImage: "https://almasaccessories.netlify.app/logo.png",
   keywords: [
     // Primary Brand & Product
     "Almas Thread",
@@ -120,8 +120,8 @@ export function constructMetadata({
           url: image,
           width: 1200,
           height: 630,
-          alt: title,
-          type: "image/jpeg",
+          alt: `${siteConfig.shortName} Official Logo`,
+          type: "image/png",
         },
       ],
     },
