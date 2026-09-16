@@ -1,0 +1,100 @@
+[
+  {
+    "id": "almas-thread-120-2",
+    "name_en": "Almas Thread 120/2",
+    "name_bn": "আলমাস থ্রেড ১২০/২",
+    "category": "featured",
+    "tag_en": "100% Export Quality Embroidery Thread",
+    "tag_bn": "১০০% এক্সপোর্ট কোয়ালিটি এমব্রয়ডারি সুতা",
+    "color_class": "bg-cyan-600",
+    "description_en": "High-quality 120/2 embroidery thread designed for smooth performance, excellent finishing, and zero-breakage on high-speed computerized embroidery machines.",
+    "description_bn": "উন্নতমানের ১২০/২ এমব্রয়ডারি সুতা, যা হাই-স্পিড এমব্রয়ডারি মেশিনে স্মুথ পারফরম্যান্স, উন্নত ফিনিশিং এবং নির্ভরযোগ্য উৎপাদনে সহায়তা করে।",
+    "features_en": [
+      "Thread Count: 120/2 Specification",
+      "Application: Computerized Multi-Head Embroidery Machines",
+      "800+ Ready Color Shades & Pantone Matching",
+      "Micro Silicon Wax Lubrication (Zero Breakage)",
+      "Packaging: 5000m & 4000m King Cones"
+    ],
+    "features_bn": [
+      "সুতার কাউন্ট: ১২০/২ স্পেসিফিকেশন",
+      "ব্যবহার: কম্পিউটারাইজড মাল্টি-হেড এমব্রয়ডারি মেশিন",
+      "৮০০+ রেডি কালার শেড ও প্যান্টোন ম্যাচিং",
+      "মাইক্রো সিলিকন লুব্রিকেশন (জিরো ব্রেক)",
+      "প্যাকেজিং: ৫০০০ ও ৪০০০ মিটার কিং কোন"
+    ],
+    "images": [
+      "/images/products/almas_thread_120_2.jpg",
+      "/images/products/thread_cones_display.jpg",
+      "/images/products/embroidery_machine_plant.jpg"
+    ]
+  },
+  {
+    "id": "almas-trilobal-embroidery",
+    "name_en": "Trilobal Polyester 120/2 Thread",
+    "name_bn": "ট্রাইলোবাল পলিয়েস্টার ১২০/২ সুতা",
+    "category": "trilobal",
+    "tag_en": "High-Luster Embroidery Yarn",
+    "tag_bn": "উজ্জ্বল লাস্টার এমব্রয়ডারি সুতা",
+    "color_class": "bg-purple-600",
+    "description_en": "Brilliant high-luster trilobal embroidery yarn with deep color fastness against washing and chlorine bleach.",
+    "description_bn": "উচ্চ উজ্জ্বলতা ও লাক্সারি শাইন সমৃদ্ধ এমব্রয়ডারি সুতা যা ইন্ডাস্ট্রিয়াল ওয়াশ ও ব্লিচেও অবিকৃত থাকে।",
+    "features_en": ["Ticket: 120/2 & 75D/2", "550+ Brilliant Colors", "1200+ RPM Machine Tested", "Chlorine Fastness 4.5+"],
+    "features_bn": ["টিকেট: ১২০/২ ও ৭৫ডি/২", "৫৫+ চকচকে শেড", "১২০০+ RPM মেশিনে পরীক্ষিত", "ক্লোরিন ফাস্টনেস ৪.৫+"],
+    "images": [
+      "/images/products/thread_cones_display.jpg",
+      "/images/products/almas_thread_120_2.jpg"
+    ]
+  },
+  {
+    "id": "almas-metallic-embroidery",
+    "name_en": "Metallic Gold & Silver Thread",
+    "name_bn": "মেটালিক গোল্ড ও সিলভার সুতা",
+    "category": "metallic",
+    "tag_en": "Fashion & Zari Embellishment",
+    "tag_bn": "লাক্সারি ফ্যাশন ও জরি সুতা",
+    "color_class": "bg-amber-600",
+    "description_en": "Premium metallic wrapped thread offering dazzling golden and silvery reflection without loop snapping.",
+    "description_bn": "প্রিমিয়াম মেটালিক আবৃত সুতা যা জমকালো সোনালী ও রূপালী এমব্রয়ডারি ডিজাইনের জন্য অতুলনীয়।",
+    "features_en": ["Pure Polyester Core", "Real Metallic Sheen", "Anti-Kink Lubrication", "Rich Gold / Silver Range"],
+    "features_bn": ["পিওর পলিয়েস্টার কোর", "আসল মেটালিক উজ্জ্বলতা", "অ্যান্টি-কিঙ্ক লুব্রিকেটেড", "স্বর্ণ ও রৌপ্য শেডের সংগ্রহ"],
+    "images": [
+      "/images/products/color-card.jpg",
+      "/images/products/thread_cones_display.jpg"
+    ]
+  },
+  {
+    "id": "almas-rayon-luster",
+    "name_en": "Silky Rayon Embroidery Thread",
+    "name_bn": "সিল্কি রেয়ন এমব্রয়ডারি সুতা",
+    "category": "rayon",
+    "tag_en": "Ultra Soft & Silk Sheen",
+    "tag_bn": "অতি কোমল ও সিল্কি ফিনিশ",
+    "color_class": "bg-pink-600",
+    "description_en": "Natural viscose rayon thread delivering silk-like smoothness and fluid drape for high-end boutique garments.",
+    "description_bn": "প্রাকৃতিক ভিসকস রেয়ন থেকে প্রস্তুত অত্যন্ত কোমল ও সিল্কি এমব্রয়ডারি সুতা যা হাই-ফ্যাশন পোশাকে চমৎকার মান এনে দেয়।",
+    "features_en": ["Natural Viscose Core", "Soft Touch Finish", "Rich Color Depth", "Zero Puckering on Knits"],
+    "features_bn": ["ন্যাচারাল ভিসকস কোর", "মোলায়েম ফিনিশিং", "গভীর কালার ডেপথ", "নিট কাপড়ে শতভাগ কুঞ্চনমুক্ত"],
+    "images": [
+      "/images/products/embroidery-2.jpg",
+      "/images/products/almas_thread_120_2.jpg"
+    ]
+  },
+  {
+    "id": "almas-recycled-eco-embroidery",
+    "name_en": "100% Recycled Eco Thread 120/2",
+    "name_bn": "১০০% রিসাইকেল্ড ইকো সুতা ১২০/২",
+    "category": "eco-sustainable",
+    "tag_en": "GRS Certified Sustainable",
+    "tag_bn": "জিআরএস সার্টিফাইড সুতা",
+    "color_class": "bg-emerald-600",
+    "description_en": "Environmentally friendly 120/2 thread made from certified recycled PET bottles for green buyer audits.",
+    "description_bn": "রিসাইকেল্ড পিইটি বোতল থেকে প্রস্তুত পরিবেশবান্ধব ১২০/২ এমব্রয়ডারি সুতা যা বায়ারদের গ্রিন অডিটের শতভাগ শর্ত পূরণ করে।",
+    "features_en": ["GRS Certified", "OEKO-TEX Class I Baby Safe", "100% Recycled PET", "High Tensile Strength"],
+    "features_bn": ["GRS সার্টিফাইড", "OEKO-TEX ক্লাস ১ শিশু-নিরাপদ", "১০০% রিসাইকেল্ড পিইটি", "একই সর্বোচ্চ টান শক্তি"],
+    "images": [
+      "/images/products/eco-1.jpg",
+      "/images/products/almas_thread_120_2.jpg"
+    ]
+  }
+]
