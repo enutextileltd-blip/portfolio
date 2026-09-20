@@ -106,8 +106,15 @@ export function Footer() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-2.5 pt-1">
+              <div className="flex flex-wrap items-center gap-x-2 gap-y-1 pt-1">
                 <Phone className="w-4 h-4 text-cyan-400 shrink-0" />
+                <a
+                  href="tel:01819898611"
+                  className="font-black text-cyan-300 hover:text-white transition-colors"
+                >
+                  01819-898611
+                </a>
+                <span className="text-slate-500">,</span>
                 <a
                   href="tel:01845069803"
                   className="font-black text-cyan-300 hover:text-white transition-colors"

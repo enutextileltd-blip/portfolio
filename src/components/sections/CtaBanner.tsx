@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { Check, Send, PhoneCall } from "lucide-react";
 
@@ -45,7 +46,7 @@ export function CtaBanner() {
               {t("rfqSubtitle")}
             </p>
 
-            <div className="space-y-2.5 text-xs sm:text-sm text-slate-700 font-bold mb-6">
+            <div className="space-y-2.5 text-xs sm:text-sm text-slate-700 font-bold mb-5">
               <div className="flex items-center gap-2.5">
                 <div className="w-5 h-5 rounded-full clay-pill text-emerald-600 flex items-center justify-center shrink-0">
                   <Check className="w-3.5 h-3.5" />
@@ -66,13 +67,36 @@ export function CtaBanner() {
               </div>
             </div>
 
-            <div className="pt-4 border-t border-slate-200/80">
+            {/* Authentic Thread Basket Showcase */}
+            <div className="relative w-full max-w-sm sm:max-w-md my-4">
+              <div className="relative w-full h-44 sm:h-52 flex items-center justify-center">
+                <Image
+                  src="/images/thread_basket_cutout.png"
+                  alt="Almas Authentic Thread Basket with Spools & Hibiscus"
+                  fill
+                  sizes="(max-width: 640px) 280px, 400px"
+                  className="object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.15)] hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+
+            <div className="pt-3 border-t border-slate-200/80 flex flex-wrap items-center gap-x-2 gap-y-1">
+              <span className="inline-flex items-center gap-1.5 text-cyan-800 font-bold text-sm">
+                <PhoneCall className="w-4 h-4 text-cyan-600" />
+                <span>{lang === "bn" ? "সরাসরি হটলাইন:" : "Direct Hotline:"}</span>
+              </span>
+              <a
+                href="tel:01819898611"
+                className="text-cyan-800 hover:text-cyan-600 font-bold text-sm transition-colors underline underline-offset-2"
+              >
+                01819-898611
+              </a>
+              <span className="text-slate-400">,</span>
               <a
                 href="tel:01845069803"
-                className="inline-flex items-center gap-2 text-cyan-800 hover:text-cyan-600 font-bold text-sm transition-colors"
+                className="text-cyan-800 hover:text-cyan-600 font-bold text-sm transition-colors underline underline-offset-2"
               >
-                <PhoneCall className="w-4 h-4 text-cyan-600" />
-                <span>{lang === "bn" ? "সরাসরি হটলাইন: 01845-069803" : "Direct Hotline: 01845-069803"}</span>
+                01845-069803
               </a>
             </div>
           </div>

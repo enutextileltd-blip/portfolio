@@ -44,13 +44,22 @@ export function Navbar() {
             </div>
           </div>
 
-          <a
-            href="tel:01845069803"
-            className="inline-flex items-center gap-1.5 text-cyan-300 hover:text-white font-bold transition-colors"
-          >
-            <PhoneCall className="w-3.5 h-3.5 text-cyan-400" />
-            <span>01845-069803</span>
-          </a>
+          <div className="flex items-center gap-3">
+            <a
+              href="tel:01819898611"
+              className="inline-flex items-center gap-1.5 text-cyan-300 hover:text-white font-bold transition-colors"
+            >
+              <PhoneCall className="w-3.5 h-3.5 text-cyan-400" />
+              <span>01819-898611</span>
+            </a>
+            <span className="text-slate-600 hidden xs:inline">|</span>
+            <a
+              href="tel:01845069803"
+              className="hidden xs:inline-flex items-center gap-1.5 text-cyan-300 hover:text-white font-bold transition-colors"
+            >
+              <span>01845-069803</span>
+            </a>
+          </div>
         </div>
       </div>
 

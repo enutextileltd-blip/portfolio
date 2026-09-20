@@ -74,30 +74,40 @@ export function LocationDirectory() {
                   <Clock className="w-4 h-4 text-slate-400" />
                   <span>{lang === "bn" ? "শনিবার – বৃহস্পতিবার: সকাল ৯:০০ – সন্ধ্যা ৭:০০" : "Saturday – Thursday: 9:00 AM – 7:00 PM"}</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Phone className="w-4 h-4 text-cyan-600" />
+                <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                  <Phone className="w-4 h-4 text-cyan-600 shrink-0" />
                   <span className="text-slate-900 font-bold">
-                    {lang === "bn" ? "হটলাইন: 01845-069803" : "Hotline: 01845-069803"}
+                    {lang === "bn" ? "হটলাইন:" : "Hotline:"}
                   </span>
+                  <a href="tel:01819898611" className="text-slate-900 hover:text-cyan-700 font-bold">01819-898611</a>
+                  <span className="text-slate-400">,</span>
+                  <a href="tel:01845069803" className="text-slate-900 hover:text-cyan-700 font-bold">01845-069803</a>
                 </div>
               </div>
             </div>
 
-            <div className="pt-4 border-t border-slate-200/80 flex flex-col sm:flex-row gap-3.5">
+            <div className="pt-4 border-t border-slate-200/80 flex flex-col sm:flex-row gap-2.5">
+              <a
+                href="tel:01819898611"
+                className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-3 rounded-full clay-btn-primary font-black text-xs"
+              >
+                <PhoneCall className="w-3.5 h-3.5" />
+                <span>{t("directCall")} (01819-898611)</span>
+              </a>
               <a
                 href="tel:01845069803"
-                className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-full clay-btn-primary font-black text-xs sm:text-sm"
+                className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-3 rounded-full clay-btn-secondary text-slate-800 font-bold text-xs"
               >
-                <PhoneCall className="w-4 h-4" />
-                <span>{t("directCall")} (01845-069803)</span>
+                <PhoneCall className="w-3.5 h-3.5 text-cyan-700" />
+                <span>01845-069803</span>
               </a>
               <a
                 href="https://maps.google.com/?q=Gazipur+Dhaka+Bangladesh"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 py-3.5 px-5 rounded-full clay-btn-secondary text-slate-800 font-bold text-xs"
+                className="inline-flex items-center justify-center gap-2 py-3 px-4 rounded-full clay-btn-secondary text-slate-800 font-bold text-xs"
               >
-                <Navigation className="w-4 h-4 text-cyan-600" />
+                <Navigation className="w-3.5 h-3.5 text-cyan-600" />
                 <span>{t("viewMap")}</span>
               </a>
             </div>
@@ -144,22 +154,32 @@ export function LocationDirectory() {
                   <Clock className="w-4 h-4 text-slate-400" />
                   <span>{lang === "bn" ? "প্রোডাকশন শিফট: ২৪ ঘণ্টা চালু" : "Production Shift: 24/7 Operations"}</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Phone className="w-4 h-4 text-cyan-600" />
+                <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                  <Phone className="w-4 h-4 text-cyan-600 shrink-0" />
                   <span className="text-slate-900 font-bold">
-                    {lang === "bn" ? "যোগাযোগ: 01845-069803" : "Contact: 01845-069803"}
+                    {lang === "bn" ? "যোগাযোগ:" : "Contact:"}
                   </span>
+                  <a href="tel:01819898611" className="text-slate-900 hover:text-cyan-700 font-bold">01819-898611</a>
+                  <span className="text-slate-400">,</span>
+                  <a href="tel:01845069803" className="text-slate-900 hover:text-cyan-700 font-bold">01845-069803</a>
                 </div>
               </div>
             </div>
 
-            <div className="pt-4 border-t border-slate-200/80 flex flex-col sm:flex-row gap-3.5">
+            <div className="pt-4 border-t border-slate-200/80 flex flex-col sm:flex-row gap-2.5">
+              <a
+                href="tel:01819898611"
+                className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-3 rounded-full clay-btn-primary font-black text-xs"
+              >
+                <PhoneCall className="w-3.5 h-3.5" />
+                <span>{t("directCall")} (01819-898611)</span>
+              </a>
               <a
                 href="tel:01845069803"
-                className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-full clay-btn-primary font-black text-xs sm:text-sm"
+                className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-3 rounded-full clay-btn-secondary text-slate-800 font-bold text-xs"
               >
-                <PhoneCall className="w-4 h-4" />
-                <span>{t("directCall")} (01845-069803)</span>
+                <PhoneCall className="w-3.5 h-3.5 text-cyan-700" />
+                <span>01845-069803</span>
               </a>
               <a
                 href="https://maps.google.com/?q=Pahartali+Chattogram+Bangladesh"

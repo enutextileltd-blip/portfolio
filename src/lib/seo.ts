@@ -46,8 +46,8 @@ export const siteConfig = {
     "RMG Garments Accessories Supplier Bangladesh",
     "পাইকারি এমব্রয়ডারি সুতা কারখানা"
   ],
-  hotline: "01845-069803",
-  internationalPhone: "+8801845069803",
+  hotline: "01819-898611, 01845-069803",
+  internationalPhone: "+8801819898611",
   email: "info@almasaccessories.com",
   offices: {
     chattogram: {
@@ -146,9 +146,9 @@ export function constructMetadata({
     category: "Industrial & Manufacturing Textiles",
     classification: "Embroidery Thread Manufacturing & Apparel Accessories",
     icons: {
-      icon: "/favicon.svg",
-      shortcut: "/favicon.svg",
-      apple: "/favicon.svg",
+      icon: "/logo.png",
+      shortcut: "/favicon.ico",
+      apple: "/apple-icon.png",
     },
   };
 }
@@ -164,7 +164,7 @@ export function generateOrganizationSchema() {
     name: siteConfig.companyName,
     alternateName: [siteConfig.shortName, "আলমাস থ্রেড", "Almas Thread Bangladesh"],
     url: siteConfig.url,
-    logo: `${siteConfig.url}/images/products/almas_thread_120_2.jpg`,
+    logo: `${siteConfig.url}/images/almas_official_logo.jpg`,
     image: `${siteConfig.url}/images/products/embroidery_machine_plant.jpg`,
     telephone: siteConfig.internationalPhone,
     email: siteConfig.email,
