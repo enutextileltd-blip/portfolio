@@ -20,11 +20,11 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative pt-28 sm:pt-28 lg:pt-30 pb-0 bg-white overflow-hidden text-slate-900 font-bn select-none border-b border-slate-200"
+      className="relative pt-[96px] sm:pt-28 lg:pt-30 pb-0 bg-white overflow-hidden text-slate-900 font-bn select-none border-b border-slate-200"
     >
-      {/* Top-Left Diagonal Angular Corner Edge (Opening Ceremony Curtain effect) */}
+      {/* Top-Left Diagonal Angular Corner Edge (Opening Ceremony Curtain effect - starts flush below navbar) */}
       <svg
-        className="absolute top-[86px] sm:top-0 left-0 w-20 sm:w-48 lg:w-64 h-20 sm:h-48 lg:h-64 pointer-events-none z-10"
+        className="absolute top-[94px] sm:top-0 left-0 w-20 sm:w-48 lg:w-64 h-20 sm:h-48 lg:h-64 pointer-events-none z-10"
         viewBox="0 0 400 400"
         fill="none"
         preserveAspectRatio="xMinYMin slice"
@@ -41,9 +41,9 @@ export function HeroSection() {
         <path d="M 185 0 L 200 0 L 0 200 L 0 185 Z" fill="#ffffff" opacity="0.5" />
       </svg>
 
-      {/* Top-Right Diagonal Angular Corner Edge (mirrored Curtain on both sides) */}
+      {/* Top-Right Diagonal Angular Corner Edge (mirrored Curtain - starts flush below navbar) */}
       <svg
-        className="absolute top-[86px] sm:top-0 right-0 w-16 sm:w-36 lg:w-48 h-16 sm:h-36 lg:h-48 pointer-events-none z-10"
+        className="absolute top-[94px] sm:top-0 right-0 w-16 sm:w-36 lg:w-48 h-16 sm:h-36 lg:h-48 pointer-events-none z-10"
         viewBox="0 0 300 300"
         fill="none"
         preserveAspectRatio="xMaxYMin slice"
@@ -58,22 +58,22 @@ export function HeroSection() {
         <path d="M 300 85 L 300 100 L 200 0 L 215 0 Z" fill="#38bdf8" opacity="0.6" />
       </svg>
 
-      {/* Ambient Shadowed Background Layer: Thread Spools Lineup (Visible on Mobile & Desktop) */}
-      <div className="absolute inset-x-0 bottom-0 pointer-events-none z-0 overflow-hidden flex items-end justify-center h-44 sm:h-[88%]">
-        <div className="relative w-full h-full opacity-35 sm:opacity-25 mix-blend-multiply">
+      {/* Ambient Shadowed Background Layer: Thread Spools Lineup (Positioned near top & shifted right on Mobile, bottom span on Desktop) */}
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden flex items-start sm:items-end justify-end sm:justify-center pt-24 xs:pt-28 sm:pt-0 pr-2 xs:pr-6 sm:pr-0">
+        <div className="relative w-[82%] sm:w-full h-28 xs:h-32 sm:h-[88%] max-w-sm sm:max-w-none opacity-35 sm:opacity-25 mix-blend-multiply translate-x-3 sm:translate-x-0">
           <Image
             src="/images/almas_thread_spools_lineup.png"
             alt="Almas Thread Spools Background Accent"
             fill
-            sizes="100vw"
-            className="object-contain object-bottom"
+            sizes="(max-width: 640px) 82vw, 100vw"
+            className="object-contain object-top-right sm:object-bottom"
             priority
           />
         </div>
       </div>
 
       {/* Main Container */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 pt-2 sm:pt-2 pb-3 sm:pb-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 pt-1 sm:pt-2 pb-2 sm:pb-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-3 sm:gap-6 lg:gap-8 items-center">
           
           {/* LEFT COLUMN: Brand, Headlines, Slogan & Buttons */}
@@ -192,9 +192,9 @@ export function HeroSection() {
 
           </div>
 
-          {/* RIGHT COLUMN: Official Almas 3-Tier Wooden Thread Shelf Display */}
-          <div className="lg:col-span-6 flex justify-center lg:justify-end relative mt-2 sm:mt-0">
-            <div className="relative w-full max-w-[320px] xs:max-w-sm sm:max-w-md lg:max-w-lg group">
+          {/* RIGHT COLUMN: Official Almas 3-Tier Wooden Thread Shelf Display (Centered on Mobile) */}
+          <div className="lg:col-span-6 flex items-center justify-center lg:justify-end relative mt-3 sm:mt-0 w-full">
+            <div className="relative w-full max-w-[290px] xs:max-w-[330px] sm:max-w-md lg:max-w-lg mx-auto lg:mr-0 group">
               
               {/* Subtle Ambient Radial Glow Behind Shelf */}
               <div className="absolute inset-0 bg-radial from-amber-500/15 via-cyan-400/10 to-transparent blur-2xl rounded-full pointer-events-none transform scale-110" />
@@ -205,7 +205,7 @@ export function HeroSection() {
                   src="/images/almas_thread_shelf_display.png"
                   alt="Almas Premium 3-Tier Thread Display Rack"
                   fill
-                  sizes="(max-width: 640px) 320px, (max-width: 1024px) 450px, 520px"
+                  sizes="(max-width: 640px) 300px, (max-width: 1024px) 450px, 520px"
                   className="object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.22)] group-hover:scale-105 transition-transform duration-500"
                   priority
                 />
