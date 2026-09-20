@@ -29,11 +29,11 @@ const translations: Record<Language, Record<string, string>> = {
     posterBadge3: "Durable & Reliable",
     posterBadge4: "Imported & Export Ready",
     posterCommitment: "Quality is Our Commitment",
-    ctgOfficeTitle: "Chattogram Factory & Office:-",
-    ctgOfficeAddress: "604/750, Najir Ahamed Mistiri Sodok, West Jhrnapara, Baro Quarter, Double Mooring, Chattogram, 4202 Bangladesh.",
-    dhakaOfficeTitle: "Dhaka Regional Office:-",
-    dhakaOfficeAddress: "Opposite IUT Main Gate, Board Bazar, Gazipur, Dhaka.",
-    contactLabel: "Contact:- 01819-898611, 01845-069803",
+    posterCtgOfficeTitle: "Chattogram Factory & Office:-",
+    posterCtgOfficeAddress: "604/750, Najir Ahamed Mistiri Sodok, West Jhrnapara, Baro Quarter, Double Mooring, Chattogram, 4202 Bangladesh.",
+    posterDhakaOfficeTitle: "Dhaka Regional Office:-",
+    posterDhakaOfficeAddress: "Opposite IUT Main Gate, Board Bazar, Gazipur, Dhaka.",
+    posterContactLabel: "Contact:- 01819-898611, 01845-069803",
 
     // Navigation Menu (HOME | PRODUCTS | WHY ALMAS | ABOUT US | GALLERY | CONTACT)
     navHome: "Home",
@@ -196,11 +196,11 @@ const translations: Record<Language, Record<string, string>> = {
     posterBadge3: "টেকসই ও নির্ভরযোগ্য",
     posterBadge4: "আমদানিকৃত ও রপ্তানীমুখী",
     posterCommitment: "মানই আমাদের প্রতিশ্রুতি",
-    ctgOfficeTitle: "আমাদের চট্টগ্রাম অফিস (কারখানা):-",
-    ctgOfficeAddress: "604/750, Najir Ahamed Mistiri Sodok, West Jhrnapara, Baro Quarter, Double Mooring, Chattogram, 4202 Bangladesh.",
-    dhakaOfficeTitle: "আমাদের ঢাকা অফিস:-",
-    dhakaOfficeAddress: "আই ইউ টি গেটের বিপরীত পাশে, বোর্ড বাজার, গাজীপুর।",
-    contactLabel: "যোগাযোগ:- ০১৮৪৫-০৬৯৮০৩",
+    posterCtgOfficeTitle: "আমাদের চট্টগ্রাম অফিস (কারখানা):-",
+    posterCtgOfficeAddress: "604/750, Najir Ahamed Mistiri Sodok, West Jhrnapara, Baro Quarter, Double Mooring, Chattogram, 4202 Bangladesh.",
+    posterDhakaOfficeTitle: "আমাদের ঢাকা অফিস:-",
+    posterDhakaOfficeAddress: "আই ইউ টি গেটের বিপরীত পাশে, বোর্ড বাজার, গাজীপুর।",
+    posterContactLabel: "যোগাযোগ:- ০১৮৪৫-০৬৯৮০৩",
 
     // Navigation Menu (HOME | PRODUCTS | WHY ALMAS | ABOUT US | GALLERY | CONTACT)
     navHome: "হোম",
