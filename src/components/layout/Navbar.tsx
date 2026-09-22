@@ -112,7 +112,7 @@ export function Navbar() {
 
             {/* Exact 3D Inflated Clay WhatsApp Button */}
             <a
-              href="https://wa.me/8801845069803?text=আসসালামু%20আলাইকুম,%20ALMAS%20THREAD।%20আমি%20ওয়েবসাইটের%20মাধ্যমে%20যোগাযোগ%20করছি।"
+              href="https://wa.me/8801819898611?text=আসসালামু%20আলাইকুম,%20ALMAS%20THREAD।%20আমি%20ওয়েবসাইটের%20মাধ্যমে%20যোগাযোগ%20করছি।"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full clay-btn-whatsapp text-xs sm:text-sm font-extrabold whitespace-nowrap cursor-pointer"
@@ -151,7 +151,7 @@ export function Navbar() {
 
             <div className="pt-2 mt-1">
               <a
-                href="https://wa.me/8801845069803?text=আসসালামু%20আলাইকুম,%20ALMAS%20THREAD।%20আমি%20ওয়েবসাইটের%20মাধ্যমে%20যোগাযোগ%20করছি।"
+                href="https://wa.me/8801819898611?text=আসসালামু%20আলাইকুম,%20ALMAS%20THREAD।%20আমি%20ওয়েবসাইটের%20মাধ্যমে%20যোগাযোগ%20করছি।"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 p-3.5 rounded-full clay-btn-whatsapp font-bold text-sm"

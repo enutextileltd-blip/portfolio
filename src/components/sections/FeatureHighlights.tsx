@@ -47,7 +47,7 @@ export function FeatureHighlights() {
     },
     {
       icon: <Leaf className="w-6 h-6 text-teal-600" />,
-      title: lang === "bn" ? "পরিবেশবান্ধব ও শিশু পোশাক উপযোগী" : "OEKO-TEX Class I Baby-Safe",
+      title: lang === "bn" ? "পরিবেশবান্ধব ও শিশু পোশাক উপযোগী" : "Eco-Safe & Skin Friendly",
       description:
         lang === "bn"
           ? "ক্ষতিকারক রাসায়নিক এবং হেভি মেটাল মুক্ত যা শিশু ও সংবেদনশীল ত্বকের পোশাকে শতভাগ নিরাপদ।"

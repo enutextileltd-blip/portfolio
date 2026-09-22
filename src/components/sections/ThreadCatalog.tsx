@@ -16,7 +16,7 @@ export function ThreadCatalog() {
   const featuredImages = featured.images || [];
 
   const getWhatsAppUrl = (name: string, spec: string) => {
-    const phone = "8801845069803";
+    const phone = "8801819898611";
     const text =
       lang === "bn"
         ? `আসসালামু আলাইকুম, ALMAS ACCESSORIES INDUSTRIES।\nআমি আপনাদের ওয়েবসাইটের মাধ্যমে এই এমব্রয়ডারি সুতাটি অর্ডার / দরদাম জানতে চাচ্ছি:\n\n🧵 সুতার নাম: ${name}\n📌 স্পেসিফিকেশন: ${spec}\n\nদয়া করে মূল্য ও ডেলিভারির বিস্তারিত জানাবেন। ধন্যবাদ!`

@@ -6,7 +6,7 @@ import { useLanguage } from "@/context/LanguageContext";
 export function FloatingWhatsApp() {
   const { lang } = useLanguage();
 
-  const phone = "8801845069803";
+  const phone = "8801819898611";
   const defaultText =
     lang === "bn"
       ? "আসসালামু আলাইকুম, ALMAS THREAD (Almas Accessories Industries)। আমি আপনাদের ১২০/২ এমব্রয়ডারি সুতা ও শেড কার্ড সম্পর্কে জানতে চাচ্ছি।"

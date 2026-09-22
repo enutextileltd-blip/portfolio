@@ -11,13 +11,13 @@ export function QualityCertifications() {
 
   const certs = [
     {
-      title: "OEKO-TEX® Standard 100",
-      category: "Class I (Baby & Sensitive Wear)",
+      title: "REACH & Azo-Free Standard",
+      category: "Chemical Safety & Non-Toxic",
       description:
         lang === "bn"
-          ? "ক্ষতিকারক রাসায়নিক, অ্যালার্জেন এবং বিষাক্ত উপাদান মুক্ত যা শিশু পোশাকের জন্য আন্তর্জাতিকভাবে অনুমোদিত।"
-          : "Certified free from harmful chemicals, allergens, toxic heavy metals, and forbidden azo colorants.",
-      status: "Verified Active",
+          ? "ক্ষতিকারক রাসায়নিক, অ্যালার্জেন এবং নিষিদ্ধ এজো কালার মুক্ত যা সংবেদনশীল পোশাকের জন্য নিরাপদ।"
+          : "Verified free from harmful chemicals, allergens, toxic heavy metals, and forbidden azo colorants.",
+      status: "Compliant",
     },
     {
       title: "ISO 9001:2015",

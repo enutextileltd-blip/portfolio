@@ -53,7 +53,7 @@ export default function ColorsPage() {
   };
 
   const getWhatsAppBatchUrl = () => {
-    const phone = "8801845069803";
+    const phone = "8801819898611";
     const shadeList = selectedShades.join(", ");
     const text =
       lang === "bn"
@@ -96,7 +96,7 @@ export default function ColorsPage() {
 
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
               <a
-                href="https://wa.me/8801845069803?text=Hello%20Almas%20Thread,%20I%20would%20like%20to%20request%20the%20physical%20Full%20Color%20Shade%20Book%20for%20our%20factory."
+                href="https://wa.me/8801819898611?text=Hello%20Almas%20Thread,%20I%20would%20like%20to%20request%20the%20physical%20Full%20Color%20Shade%20Book%20for%20our%20factory."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full clay-btn-primary font-bold text-sm text-center"
@@ -263,7 +263,7 @@ export default function ColorsPage() {
           </div>
 
           <a
-            href="https://wa.me/8801845069803?text=Hello%20Almas%20Thread,%20I%20need%20custom%20Pantone%20matching%20for%20our%20garment%20order."
+            href="https://wa.me/8801819898611?text=Hello%20Almas%20Thread,%20I%20need%20custom%20Pantone%20matching%20for%20our%20garment%20order."
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3.5 rounded-full clay-btn-primary font-black text-sm shrink-0"

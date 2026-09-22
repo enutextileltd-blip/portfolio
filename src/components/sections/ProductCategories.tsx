@@ -46,7 +46,7 @@ const products: ProductItem[] = [
     description:
       "Swiss-grade tooth alignment with butter-smooth glide. Custom engraved pullers, waterproof tape options, and oxidation-resistant electroplating.",
     finishes: ["Mirror Polish Chrome", "Vintage Bronze", "24K Gold Plated", "Titanium Grey"],
-    specs: ["Reciprocating Cycles > 10,000", "Custom Molded Pullers", "Oeko-Tex Tape"],
+    specs: ["Reciprocating Cycles > 10,000", "Custom Molded Pullers", "High-Tenacity Tape"],
     badge: "High Precision",
   },
   {
@@ -57,7 +57,7 @@ const products: ProductItem[] = [
     description:
       "Ultra-crisp 3D relief emblems with micro-injection precision. Flexible, washable up to 60°C, with heat-transfer or sew-on backing.",
     finishes: ["Matte Velvet", "Gloss High-Definition", "Luminescent Glow", "Metallic Fleck"],
-    specs: ["60°C Wash Fastness", "OEKO-TEX Class I", "Zero Color Bleed"],
+    specs: ["60°C Wash Fastness", "Skin-Safe & Eco-Dyes", "Zero Color Bleed"],
     badge: "Modern Apparel",
   },
   {

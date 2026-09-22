@@ -88,7 +88,7 @@ export function ColorShadeShowcase() {
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder={lang === "bn" ? "কোড খুঁজুন (যেমন: AL-520)..." : "Search code (e.g. AL-520)..."}
+              placeholder={lang === "bn" ? "কোড খুঁজুন (যেমন: ENU-520)..." : "Search code (e.g. ENU-520)..."}
               className="w-full pl-9 pr-3 py-2 text-xs rounded-full bg-white border border-slate-200 text-slate-800 shadow-inner focus:outline-none focus:border-cyan-600"
             />
           </div>

@@ -61,7 +61,7 @@ export function SustainabilitySection() {
 
               <div className="mt-6 pt-4 border-t border-white/10 flex items-center gap-2 text-xs font-semibold text-emerald-400">
                 <CheckCircle2 className="w-4 h-4" />
-                <span>GRS &amp; OEKO-TEX Standard Audited</span>
+                <span>GRS &amp; Eco-Safe Standard Audited</span>
               </div>
             </Card>
           ))}

@@ -18,7 +18,7 @@ export function CtaBanner() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const phone = "8801845069803";
+    const phone = "8801819898611";
     const text =
       lang === "bn"
         ? `আসসালামু আলাইকুম, ALMAS ACCESSORIES INDUSTRIES।\nআমি আপনাদের ওয়েবসাইটের মাধ্যমে ফ্রি স্যাম্পল বক্স ও শেড কার্ডের জন্য আবেদন করছি:\n\n👤 নাম: ${formData.name}\n🏢 ফ্যাক্টরি/প্রতিষ্ঠান: ${formData.company}\n📞 ফোন/হোয়াটসঅ্যাপ: ${formData.phone}\n🧵 সুতার ধরন: ${formData.threadType}\n📝 কালার/নোট: ${formData.notes || "N/A"}\n\nদয়া করে ডেলিভারির বিস্তারিত জানাবেন। ধন্যবাদ!`

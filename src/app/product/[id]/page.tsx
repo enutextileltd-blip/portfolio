@@ -20,12 +20,12 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
   const [selectedImgIdx, setSelectedImgIdx] = useState(0);
 
   const colorOptions = [
-    { hex: "#ffffff", nameEn: "Optical White", nameBn: "অপটিক্যাল হোয়াইট", code: "AL-001", border: true },
-    { hex: "#0f172a", nameEn: "Pitch Jet Black", nameBn: "পিচ জেট ব্ল্যাক", code: "AL-999" },
-    { hex: "#dc2626", nameEn: "Crimson Red", nameBn: "ক্রিমসন রেড", code: "AL-102" },
-    { hex: "#eab308", nameEn: "Optic Canary Yellow", nameBn: "অপটিক ক্যানারি ইয়োলো", code: "AL-312" },
-    { hex: "#16a34a", nameEn: "Classic Emerald Green", nameBn: "ক্লাসিক এমারেল্ড গ্রিন", code: "AL-412" },
-    { hex: "#2563eb", nameEn: "Royal Cobalt Blue", nameBn: "রয়্যাল কোবাল্ট ব্লু", code: "AL-628" },
+    { hex: "#ffffff", nameEn: "Optical White", nameBn: "অপটিক্যাল হোয়াইট", code: "ENU-001", border: true },
+    { hex: "#0f172a", nameEn: "Pitch Jet Black", nameBn: "পিচ জেট ব্ল্যাক", code: "ENU-999" },
+    { hex: "#dc2626", nameEn: "Crimson Red", nameBn: "ক্রিমসন রেড", code: "ENU-102" },
+    { hex: "#eab308", nameEn: "Optic Canary Yellow", nameBn: "অপটিক ক্যানারি ইয়োলো", code: "ENU-312" },
+    { hex: "#16a34a", nameEn: "Classic Emerald Green", nameBn: "ক্লাসিক এমারেল্ড গ্রিন", code: "ENU-412" },
+    { hex: "#2563eb", nameEn: "Royal Cobalt Blue", nameBn: "রয়্যাল কোবাল্ট ব্লু", code: "ENU-628" },
   ];
 
   const [selectedColor, setSelectedColor] = useState({
@@ -43,7 +43,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
   const images = product.images || [];
 
   const getWhatsAppUrl = () => {
-    const phone = "8801845069803";
+    const phone = "8801819898611";
     const text =
       lang === "bn"
         ? `আসসালামু আলাইকুম, ALMAS ACCESSORIES INDUSTRIES।\nআমি আপনাদের ওয়েবসাইটের প্রোডাক্ট পেজের মাধ্যমে এই এমব্রয়ডারি সুতাটি অর্ডার / দরদাম জানতে চাচ্ছি:\n\n🧵 সুতার নাম: ${name}\n📌 স্পেসিফিকেশন: ${tag}\n🎨 নির্বাচিত সুতার রঙ: ${selectedColor.name} (${selectedColor.code})\n\nদয়া করে এটার দরদাম এবং ডেলিভারির বিস্তারিত জানাবেন। ধন্যবাদ!`

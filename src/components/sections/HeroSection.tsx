@@ -103,9 +103,7 @@ export function HeroSection() {
 
             {/* Sub-Headline */}
             <p className="text-xs sm:text-base lg:text-lg font-bold text-slate-800 mt-1 mb-1 tracking-tight">
-              {lang === "bn"
-                ? "আমদানিকৃত উন্নতমানের সুতা এখন আপনার হাতের নাগালে"
-                : "Imported High-Quality Thread Now Within Your Reach"}
+              {t("posterSubHeader")}
             </p>
 
             {/* Elegant Accent Line */}
@@ -140,16 +138,20 @@ export function HeroSection() {
                   </span>
                 </div>
                 <div className="flex items-baseline gap-1 sm:gap-2 pl-4 sm:pl-10 mt-0.5">
-                  <span className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#0f2942] tracking-tight leading-none">
-                    {lang === "bn" ? "স্বপ্ন…" : "in Every Thread…"}
+                  <span className="text-3xl sm:text-5xl lg:text-6xl font-black text-[#0f2942] tracking-tight leading-none inline-flex items-center">
+                    <span>{lang === "bn" ? "স্বপ্ন" : "in Every Thread"}</span>
+                    <span className="inline-flex items-center gap-1.5 sm:gap-2 ml-2 sm:ml-3 select-none translate-y-1 sm:translate-y-1.5">
+                      <span className="animate-dot-1 w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 rounded-full bg-sky-500 shadow-sm border border-white/70" />
+                      <span className="animate-dot-2 w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 rounded-full bg-emerald-500 shadow-sm border border-white/70" />
+                      <span className="animate-dot-3 w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 rounded-full bg-red-500 shadow-sm border border-white/70" />
+                    </span>
                   </span>
                 </div>
               </div>
             </div>
 
-            {/* CTA Buttons & Hotlines (Both numbers visible & tap-to-call on mobile and desktop) */}
+            {/* CTA Buttons & Hotline */}
             <div className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-2 sm:gap-3 mt-2 sm:mt-3 w-full sm:w-auto">
-              {/* Primary Action Buttons */}
               <div className="flex items-center gap-2 w-full sm:w-auto">
                 <Link
                   href="#products"
@@ -160,7 +162,7 @@ export function HeroSection() {
                 </Link>
 
                 <a
-                  href="https://wa.me/8801845069803"
+                  href="https://wa.me/8801819898611"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm shadow-sm hover:shadow-emerald-600/30 active:scale-95 transition-all"
@@ -170,24 +172,14 @@ export function HeroSection() {
                 </a>
               </div>
 
-              {/* Dual Direct Phone Numbers */}
-              <div className="flex items-center gap-2 w-full sm:w-auto">
-                <a
-                  href="tel:01819898611"
-                  className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 px-3 sm:px-4 py-1.5 sm:py-2.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs sm:text-sm border border-slate-300 shadow-xs active:scale-95 transition-all"
-                >
-                  <PhoneCall className="w-3.5 h-3.5 text-cyan-700 shrink-0" />
-                  <span className="tracking-tight">01819-898611</span>
-                </a>
-
-                <a
-                  href="tel:01845069803"
-                  className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 px-3 sm:px-4 py-1.5 sm:py-2.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs sm:text-sm border border-slate-300 shadow-xs active:scale-95 transition-all"
-                >
-                  <PhoneCall className="w-3.5 h-3.5 text-cyan-700 shrink-0" />
-                  <span className="tracking-tight">01845-069803</span>
-                </a>
-              </div>
+              {/* Call Button for 01845-069803 */}
+              <a
+                href="tel:01845069803"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs sm:text-sm border border-slate-300 shadow-xs active:scale-95 transition-all"
+              >
+                <PhoneCall className="w-3.5 h-3.5 text-cyan-700 shrink-0" />
+                <span className="tracking-tight">01845-069803</span>
+              </a>
             </div>
 
           </div>
