@@ -43,8 +43,8 @@ export function Navbar() {
               <span>{lang === "bn" ? "শোরুম: গাজীপুর, ঢাকা" : "Showroom: Gazipur, Dhaka"}</span>
             </div>
             <span className="text-slate-600 hidden md:inline">|</span>
-            <span className="hidden md:inline-flex items-center gap-1 text-amber-300 font-bold bg-amber-500/15 px-2 py-0.5 rounded-full border border-amber-400/30 text-[10px]">
-              ✨ {lang === "bn" ? "৭ম বর্ষপূর্তি উদযাপন" : "7th Anniversary Celebration"}
+            <span className="hidden md:inline-flex items-center gap-1 text-amber-300 font-bold bg-amber-500/15 px-2.5 py-0.5 rounded-full border border-amber-400/30 text-[10px]">
+              {lang === "bn" ? "৭ম বর্ষপূর্তি উদযাপন" : "7th Anniversary Celebration"}
             </span>
           </div>
 

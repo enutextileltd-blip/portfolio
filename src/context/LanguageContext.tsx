@@ -29,7 +29,7 @@ const translations: Record<Language, Record<string, string>> = {
     anniversaryMilestone: "7th Year",
     anniversaryYearsLabel: "Years of Success",
     fireworkTrigger: "🎉 Launch Fireworks",
-    fireworkStop: "✨ Sparkling",
+    fireworkStop: "Celebrating",
 
     posterSubHeader: "High-Quality Embroidery Thread Now Within Your Reach",
     posterSlogan1: "Weaving",
@@ -207,7 +207,7 @@ const translations: Record<Language, Record<string, string>> = {
     anniversaryMilestone: "৭ম বর্ষ",
     anniversaryYearsLabel: "সাফল্যের ৭ বছর",
     fireworkTrigger: "🎉 বাজি ফুটান",
-    fireworkStop: "✨ বাজি চলছে",
+    fireworkStop: "বাজি চলছে",
 
     posterSubHeader: "উন্নতমানের এমব্রয়ডারি সুতা এখন আপনার হাতের নাগালে",
     posterSlogan1: "সুতোই",

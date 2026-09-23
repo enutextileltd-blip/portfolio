@@ -123,7 +123,6 @@ export function HeroSection() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
               </span>
-              <Sparkles className="w-3.5 h-3.5 text-amber-700 animate-sparkle shrink-0" />
               <span className="text-[11px] sm:text-xs font-black anniversary-gold-text tracking-tight uppercase">
                 {t("anniversaryBadge")} • {t("anniversaryTag")}
               </span>
@@ -181,7 +180,6 @@ export function HeroSection() {
               {t("posterSubHeader")}
             </p>
             <p className="text-[11px] sm:text-xs font-semibold text-amber-800/90 tracking-tight flex items-center gap-1 mb-1">
-              <Sparkles className="w-3 h-3 text-amber-600 shrink-0" />
               <span>{t("anniversarySub")}</span>
             </p>
 
@@ -287,8 +285,7 @@ export function HeroSection() {
 
               {/* Celebratory Floating Pill on Top of Display */}
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-20 px-3 py-1 rounded-full clay-anniversary-badge text-[10px] sm:text-xs font-black text-amber-900 shadow-lg whitespace-nowrap flex items-center gap-1.5 pointer-events-none">
-                <Sparkles className="w-3 h-3 text-amber-600 animate-sparkle" />
-                <span>{lang === "bn" ? "✨ ৭ম বর্ষপূর্তি বিশেষ কোয়ালিটি শোকেস" : "✨ 7th Anniversary Quality Showcase"}</span>
+                <span>{lang === "bn" ? "৭ম বর্ষপূর্তি বিশেষ কোয়ালিটি শোকেস" : "7th Anniversary Quality Showcase"}</span>
               </div>
 
               {/* 3-Tier Wooden Thread Shelf Display Cutout */}
