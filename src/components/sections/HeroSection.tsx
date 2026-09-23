@@ -14,7 +14,6 @@ import {
   ShieldCheck,
   Award,
   Factory,
-  Sparkles,
   PartyPopper,
   Flame,
 } from "lucide-react";
