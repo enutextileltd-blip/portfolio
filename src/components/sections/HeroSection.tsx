@@ -1,9 +1,11 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import confetti from "canvas-confetti";
 import { useLanguage } from "@/context/LanguageContext";
+import { CelebrationFireworks } from "@/components/ui/CelebrationFireworks";
 import {
   PhoneCall,
   ArrowRight,
@@ -12,16 +14,53 @@ import {
   ShieldCheck,
   Award,
   Factory,
+  Sparkles,
+  PartyPopper,
+  Flame,
 } from "lucide-react";
 
 export function HeroSection() {
   const { lang, t } = useLanguage();
+  const [bajiCount, setBajiCount] = useState(0);
+
+  // Trigger manual celebratory fireworks explosion & confetti burst
+  const handleLaunchFireworks = () => {
+    setBajiCount((prev) => prev + 1);
+
+    // Confetti explosion from sides and center
+    confetti({
+      particleCount: 75,
+      spread: 85,
+      origin: { y: 0.65, x: 0.5 },
+      colors: ["#FFD700", "#FF4500", "#00F0FF", "#10B981", "#FF1493"],
+    });
+
+    setTimeout(() => {
+      confetti({
+        particleCount: 55,
+        angle: 60,
+        spread: 60,
+        origin: { x: 0.1, y: 0.7 },
+        colors: ["#FFD700", "#F59E0B", "#EF4444"],
+      });
+      confetti({
+        particleCount: 55,
+        angle: 120,
+        spread: 60,
+        origin: { x: 0.9, y: 0.7 },
+        colors: ["#00F0FF", "#10B981", "#FFD700"],
+      });
+    }, 200);
+  };
 
   return (
     <section
       id="hero"
       className="relative pt-[96px] sm:pt-28 lg:pt-30 pb-0 bg-white overflow-hidden text-slate-900 font-bn select-none border-b border-slate-200"
     >
+      {/* Live "Baji Putano" (Fireworks & Sparklers Animation) Layer */}
+      <CelebrationFireworks className="z-10 opacity-85 pointer-events-auto" intensity="festive" />
+
       {/* Top-Left Diagonal Angular Corner Edge (Opening Ceremony Curtain effect - starts flush below navbar) */}
       <svg
         className="absolute top-[94px] sm:top-0 left-0 w-20 sm:w-48 lg:w-64 h-20 sm:h-48 lg:h-64 pointer-events-none z-10"
@@ -73,14 +112,28 @@ export function HeroSection() {
       </div>
 
       {/* Main Container */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 pt-1 sm:pt-2 pb-2 sm:pb-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-3 sm:gap-6 lg:gap-8 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 pt-1 sm:pt-2 pb-2 sm:pb-6 pointer-events-none">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-3 sm:gap-6 lg:gap-8 items-center pointer-events-auto">
           
-          {/* LEFT COLUMN: Brand, Headlines, Slogan & Buttons */}
+          {/* LEFT COLUMN: Brand, 7th Anniversary Milestone, Headlines, Slogan & Buttons */}
           <div className="lg:col-span-6 flex flex-col items-start text-left z-10 pl-2 sm:pl-0">
             
-            {/* Official Logo + Brand Name with Animated Typography */}
-            <div className="flex items-center gap-2.5 sm:gap-3 mb-1">
+            {/* 7th Anniversary Celebration Announcement Ribbon Badge */}
+            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full clay-anniversary-badge mb-2 sm:mb-2.5 shadow-md">
+              <span className="flex h-2 w-2 relative">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+              </span>
+              <Sparkles className="w-3.5 h-3.5 text-amber-700 animate-sparkle shrink-0" />
+              <span className="text-[11px] sm:text-xs font-black anniversary-gold-text tracking-tight uppercase">
+                {t("anniversaryBadge")} • {t("anniversaryTag")}
+              </span>
+              <PartyPopper className="w-3.5 h-3.5 text-amber-700 shrink-0 hidden xs:inline-block" />
+            </div>
+
+            {/* Brand Header with Official Logo + 3D Golden 7th Milestone Crest */}
+            <div className="flex items-center gap-2.5 sm:gap-3.5 mb-1.5">
+              {/* Official Logo */}
               <div className="relative hidden sm:block w-12 h-12 lg:w-16 lg:h-16 rounded-xl overflow-hidden shadow-md shrink-0 border-2 border-yellow-400 bg-white p-0.5 hover:scale-105 transition-transform duration-300">
                 <Image
                   src="/images/almas_official_logo.png"
@@ -91,6 +144,8 @@ export function HeroSection() {
                   priority
                 />
               </div>
+
+              {/* Brand Typography */}
               <div className="flex flex-col justify-center">
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-none almas-text-animated">
                   ALMAS
@@ -99,15 +154,40 @@ export function HeroSection() {
                   ACCESSORIES INDUSTRIES
                 </h2>
               </div>
+
+              {/* 3D Golden 7th Anniversary Milestone Crest */}
+              <div
+                className="relative group shrink-0 ml-1 cursor-pointer"
+                onClick={handleLaunchFireworks}
+                title={t("anniversaryTitle")}
+              >
+                <div className="w-11 h-11 sm:w-14 sm:h-14 lg:w-15 lg:h-15 rounded-full clay-anniversary-crest flex flex-col items-center justify-center text-amber-950 p-1 relative overflow-hidden group-hover:scale-110 transition-transform duration-300">
+                  {/* Rotating Sunburst Rays */}
+                  <div className="absolute inset-0 bg-[conic-gradient(from_0deg_at_50%_50%,rgba(255,255,255,0.45)_0deg,transparent_60deg,rgba(255,255,255,0.45)_120deg,transparent_180deg,rgba(255,255,255,0.45)_240deg,transparent_300deg,rgba(255,255,255,0.45)_360deg)] animate-sunburst-slow opacity-70 pointer-events-none" />
+                  
+                  <div className="relative z-10 flex flex-col items-center leading-none">
+                    <span className="text-lg sm:text-2xl font-black text-amber-950 drop-shadow-[0_1px_1px_rgba(255,255,255,0.9)]">
+                      {lang === "bn" ? "৭ম" : "7th"}
+                    </span>
+                    <span className="text-[7px] sm:text-[8px] font-black uppercase text-amber-900 tracking-tighter mt-0.5">
+                      {lang === "bn" ? "বর্ষপূর্তি" : "YEARS"}
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            {/* Sub-Headline */}
-            <p className="text-xs sm:text-base lg:text-lg font-bold text-slate-800 mt-1 mb-1 tracking-tight">
+            {/* Sub-Headline & 7th Anniversary Congratulatory Slogan */}
+            <p className="text-xs sm:text-base lg:text-lg font-bold text-slate-800 mt-1 mb-0.5 tracking-tight">
               {t("posterSubHeader")}
+            </p>
+            <p className="text-[11px] sm:text-xs font-semibold text-amber-800/90 tracking-tight flex items-center gap-1 mb-1">
+              <Sparkles className="w-3 h-3 text-amber-600 shrink-0" />
+              <span>{t("anniversarySub")}</span>
             </p>
 
             {/* Elegant Accent Line */}
-            <div className="w-full max-w-xs sm:max-w-sm h-[2px] bg-linear-to-r from-sky-500 via-emerald-500 to-transparent my-1 sm:my-1.5 rounded-full" />
+            <div className="w-full max-w-xs sm:max-w-sm h-[2px] bg-linear-to-r from-amber-500 via-sky-500 to-emerald-500 my-1 sm:my-1.5 rounded-full" />
 
             {/* Signature Slogan */}
             <div className="relative my-1 sm:my-2">
@@ -150,8 +230,8 @@ export function HeroSection() {
               </div>
             </div>
 
-            {/* CTA Buttons & Hotline */}
-            <div className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-2 sm:gap-3 mt-2 sm:mt-3 w-full sm:w-auto">
+            {/* CTA Buttons & Hotline & Interactive Fireworks Trigger */}
+            <div className="flex flex-col sm:flex-row flex-wrap items-start sm:items-center gap-2 sm:gap-2.5 mt-2 sm:mt-3 w-full sm:w-auto">
               <div className="flex items-center gap-2 w-full sm:w-auto">
                 <Link
                   href="#products"
@@ -172,6 +252,21 @@ export function HeroSection() {
                 </a>
               </div>
 
+              {/* Interactive "🎉 বাজি ফুটান" (Launch Fireworks) Button */}
+              <button
+                onClick={handleLaunchFireworks}
+                type="button"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full clay-anniversary-badge text-amber-950 font-black text-xs sm:text-sm shadow-sm hover:shadow-amber-500/30 active:scale-95 transition-all cursor-pointer group"
+              >
+                <Flame className="w-3.5 h-3.5 text-amber-600 group-hover:scale-125 transition-transform animate-pulse" />
+                <span>{t("fireworkTrigger")}</span>
+                {bajiCount > 0 && (
+                  <span className="ml-1 px-1.5 py-0.2 rounded-full bg-amber-600 text-white text-[10px] font-bold">
+                    +{bajiCount}
+                  </span>
+                )}
+              </button>
+
               {/* Call Button for 01845-069803 */}
               <a
                 href="tel:01845069803"
@@ -189,7 +284,13 @@ export function HeroSection() {
             <div className="relative w-full max-w-[290px] xs:max-w-[330px] sm:max-w-md lg:max-w-lg mx-auto lg:mr-0 group">
               
               {/* Subtle Ambient Radial Glow Behind Shelf */}
-              <div className="absolute inset-0 bg-radial from-amber-500/15 via-cyan-400/10 to-transparent blur-2xl rounded-full pointer-events-none transform scale-110" />
+              <div className="absolute inset-0 bg-radial from-amber-500/20 via-cyan-400/10 to-transparent blur-2xl rounded-full pointer-events-none transform scale-110" />
+
+              {/* Celebratory Floating Pill on Top of Display */}
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-20 px-3 py-1 rounded-full clay-anniversary-badge text-[10px] sm:text-xs font-black text-amber-900 shadow-lg whitespace-nowrap flex items-center gap-1.5 pointer-events-none">
+                <Sparkles className="w-3 h-3 text-amber-600 animate-sparkle" />
+                <span>{lang === "bn" ? "✨ ৭ম বর্ষপূর্তি বিশেষ কোয়ালিটি শোকেস" : "✨ 7th Anniversary Quality Showcase"}</span>
+              </div>
 
               {/* 3-Tier Wooden Thread Shelf Display Cutout */}
               <div className="relative w-full aspect-4/3 flex items-center justify-center">

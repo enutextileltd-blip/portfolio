@@ -20,6 +20,17 @@ const translations: Record<Language, Record<string, string>> = {
     bannerSlogan1: "100% Export Quality Embroidery Thread",
     bannerSlogan2: "Weaving Tomorrow's Dreams in Every Thread…",
     bannerSlogan3: "Quality is Our Uncompromising Commitment",
+    
+    // 7th Anniversary Celebration Announcement
+    anniversaryBadge: "🎉 7th Anniversary Celebration",
+    anniversaryTag: "7 Years of Success (2019 - 2026)",
+    anniversaryTitle: "Celebrating 7 Years of Excellence & Trust",
+    anniversarySub: "Honoring 7 glorious years of uncompromising quality & innovation in garment embroidery thread.",
+    anniversaryMilestone: "7th Year",
+    anniversaryYearsLabel: "Years of Success",
+    fireworkTrigger: "🎉 Launch Fireworks",
+    fireworkStop: "✨ Sparkling",
+
     posterSubHeader: "High-Quality Embroidery Thread Now Within Your Reach",
     posterSlogan1: "Weaving",
     posterSlogan2: "Tomorrow's",
@@ -187,6 +198,17 @@ const translations: Record<Language, Record<string, string>> = {
     bannerSlogan1: "১০০% এক্সপোর্ট কোয়ালিটি এমব্রয়ডারি সুতা",
     bannerSlogan2: "সুতোই বুনি আগামীর স্বপ্ন…",
     bannerSlogan3: "মানই আমাদের প্রতিশ্রুতি",
+
+    // 7th Anniversary Celebration Announcement
+    anniversaryBadge: "🎉 সপ্তম বর্ষপূর্তি উদযাপন",
+    anniversaryTag: "৭ বছরের গৌরবময় সাফল্য (২০১৯ - ২০২৬)",
+    anniversaryTitle: "৭ বছরের গৌরবময় সাফল্য ও বিশ্বস্ততা",
+    anniversarySub: "সপ্তম বর্ষপূর্তিতে সকল সম্মানিত গ্রাহক, গার্মেন্টস মার্চেন্ডাইজার ও শুভানুধ্যায়ীদের আন্তরিক শুভেচ্ছা!",
+    anniversaryMilestone: "৭ম বর্ষ",
+    anniversaryYearsLabel: "সাফল্যের ৭ বছর",
+    fireworkTrigger: "🎉 বাজি ফুটান",
+    fireworkStop: "✨ বাজি চলছে",
+
     posterSubHeader: "উন্নতমানের এমব্রয়ডারি সুতা এখন আপনার হাতের নাগালে",
     posterSlogan1: "সুতোই",
     posterSlogan2: "বুনি আগামীর",
